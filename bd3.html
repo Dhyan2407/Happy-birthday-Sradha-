@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Her Journey to 18 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to top, #fff0f5, #ffe4e1);
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 2rem;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in forwards;
+    }
+
+    section:nth-of-type(2) { animation-delay: 0.3s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.9s; }
+    section:nth-of-type(5) { animation-delay: 1.2s; }
+    section:nth-of-type(6) { animation-delay: 1.5s; }
+    section:nth-of-type(7) { animation-delay: 1.8s; }
+
+    h1, h2 {
+      font-family: 'Pacifico', cursive;
+      color: #e91e63;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      color: #444;
+    }
+
+    img {
+      max-width: 300px;
+      margin: 1rem 0;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: #ff69b4;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e91e63;
+    }
+
+    .nav {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 1rem;
+      z-index: 1000;
+    }
+
+    .nav a {
+      background: #fff;
+      color: #e91e63;
+      padding: 0.6rem 1rem;
+      text-decoration: none;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+      font-weight: 600;
+    }
+
+    .nav a:hover {
+      background: #e91e63;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.2rem;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .confetti {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 999;
+      overflow: hidden;
+    }
+
+    .confetti span {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: pink;
+      opacity: 0.8;
+      animation: fall 4s linear infinite;
+      border-radius: 50%;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="confetti" id="confetti"></div>
+
+  <section id="welcome">
+    <h1>Welcome, My Love ❤️</h1>
+    <p>Let me take you on a magical journey through time... from the early days to the moment you stepped into adulthood. Every photo, every memory, every smile — this is your story.</p>
+    <a href="#page1" class="btn">Begin the Journey 🎀</a>
+  </section>
+
+  <section id="page1">
+    <h2>👶 The Early Years</h2>
+    <img src="childhood.jpg" alt="Baby Photo" />
+    <p>You entered the world with wonder in your eyes. Little did the world know how beautifully you'd grow.</p>
+    <a href="#page2" class="btn">Next ➡️</a>
+  </section>
+
+  <section id="page2">
+    <h2>🎈 Childhood Joys</h2>
+    <img src="2nd.jpg" alt="Childhood Photo" />
+    <p>Full of mischief and laughter, your childhood was a burst of colors and dreams.</p>
+    <a href="#page3" class="btn">Next ➡️</a>
+  </section>
+
+  <section id="page3">
+    <h2>🌸 Growing Up</h2>
+    <img src="growing up.jpg" alt="Preteen Years" />
+    <p>You began blooming into someone so full of life, kindness, and a beautiful soul.</p>
+    <a href="#page4" class="btn">Next ➡️</a>
+  </section>
+
+  <section id="page4">
+    <h2>💫 Teenage Magic</h2>
+    <img src="teenage magic.jpg" alt="Teenager Photo" />
+    <p>Your teenage years brought confidence, grace, and a light that touched everyone around you.</p>
+    <a href="#page5" class="btn">Next ➡️</a>
+  </section>
+
+  <section id="page5">
+    <h2>🎉 Turning 18</h2>
+    <img src="turning 18.jpg" alt="18th Birthday" />
+    <p>Today, you step into adulthood. But to me, you will always be the heart that makes mine beat stronger.</p>
+    <a href="#final" class="btn">Final Message 💖</a>
+  </section>
+
+  <section id="final">
+    <h1>💖 Happy 18th Birthday Maya 💖</h1>
+    <p>You’re finally 18, my love. Stronger, wiser, and more radiant than ever. Your journey has only just begun, and I am so lucky to be part of it.</p>
+    <p style="margin-top: 1rem; font-size: 1.3rem; color: #e91e63;">
+      Happy 18th birthday my love 💕<br>
+      You're officially an adult now yayy!! Cheers to Sradhashree being an adult and me finally getting my title as a pedo getting lifted up 🫶<br><br>
+      I hope this day brings you lots of laughter, joy and happiness. You're going to finally enter into adulthood — there will be many challenges up ahead in this beautiful journey of yours, but I believe that you will get past each and every one of them through your resilience and the strength you've always showcased toward your growth.<br><br>
+      You will grow as the tallest and the sturdiest tree while blossoming the prettiest flowers within you and also while extending your kind glow and warm presence as roots to each and every one of us who's with you and will be with you...<br><br>
+      Welcome to the world of adults finally! I was waiting for you so much, holding an empty seat beside me for you so that you could fill it up when you would finally turn 18 and live so many more memories with me without the restriction of being a bachi anymore.<br><br>
+      I hope you grow more and more as each day passes by and become the person you always wanted to. I hope from today onwards you find more things to hold dear, more memories to cherish, more challenges to grow further, and that you enjoy the sunshine and experience of youthfulness fully with all the freedom.<br><br>
+      This day is a very special day for me and I cannot thank it enough because this day let you descend to this world and changed everything for me — for giving me the love of my life, for giving me my comfort place in life, my angel, my reason for happiness in life and my dreams!!! And so much more.<br><br>
+      I love you so much Sradha 🫶<br><br>
+      Enjoy your day to the fullest and never forget that all your life up to now has been for this day and the days coming forward for you.<br><br>
+      Aur tumhara bacha wala tag nai hatayega mein dw jitni saal ki ho jane se bhi tum 🤣<br><br>
+      Once again,<br><br>
+      HAPPY BIRTHDAY MAYA 💕<br>
+      Today is a special day for the most amazing and special person for me 🫶<br>
+      Congrats on finally turning 18 and stepping into adulthood!!!
+    </p>
+  </section>
+
+  <div class="nav">
+    <a href="#welcome">Start</a>
+    <a href="#page1">1</a>
+    <a href="#page2">2</a>
+    <a href="#page3">3</a>
+    <a href="#page4">4</a>
+    <a href="#page5">5</a>
+    <a href="#final">❤️</a>
+  </div>
+
+  <footer>
+    Crafted with all my heart. For you. 💕
+  </footer>
+
+  <script>
+    const confettiContainer = document.getElementById('confetti');
+    for (let i = 0; i < 150; i++) {
+      const span = document.createElement('span');
+      span.style.left = Math.random() * 100 + 'vw';
+      span.style.top = Math.random() * -100 + 'px';
+      span.style.width = span.style.height = Math.random() * 8 + 5 + 'px';
+      span.style.background = `hsl(${Math.random() * 360}, 70%, 80%)`;
+      span.style.animationDuration = 3 + Math.random() * 2 + 's';
+      confettiContainer.appendChild(span);
+    }
+  </script>
+</body>
+</html>
